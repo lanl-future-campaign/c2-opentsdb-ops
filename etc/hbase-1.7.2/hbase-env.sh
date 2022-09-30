@@ -30,11 +30,11 @@
 # export HBASE_CLASSPATH=
 
 # The maximum amount of heap to use. Default is left to JVM default.
-export HBASE_HEAPSIZE=2G
+export HBASE_HEAPSIZE=8G
 
 # Uncomment below if you intend to use off heap cache. For example, to allocate 8G of 
 # offheap, set the value to "8G".
-# export HBASE_OFFHEAPSIZE=1G
+export HBASE_OFFHEAPSIZE=8G
 
 # Extra Java runtime options.
 # Below are what we set by default.  May only work with SUN JVM.

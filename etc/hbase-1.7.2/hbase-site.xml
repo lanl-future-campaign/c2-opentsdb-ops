@@ -53,10 +53,6 @@
   </property>
   <property>
     <name>hbase.regionserver.handler.count</name>
-    <value>8</value>
-  </property>
-  <property>
-    <name>hbase.zookeeper.property.maxClientCnxns</name>
-    <value>0</value>
+    <value>16</value>
   </property>
 </configuration>
