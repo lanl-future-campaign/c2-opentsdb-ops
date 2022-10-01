@@ -6,9 +6,9 @@ cd `realpath $curdir` || exit 1
 
 source common.sh
 
-for ty in snappy gz
-do
-	$HBASE_HOME/bin/hbase org.apache.hadoop.hbase.util.CompressionTest somefile $ty
-done
+ulimit -Hn 100000
+ulimit -Sn 100000
+
+$HBASE_HOME/bin/start-hbase.sh
 
 exit 0

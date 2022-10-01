@@ -6,9 +6,10 @@ cd `realpath $curdir` || exit 1
 
 source common.sh
 
-for ty in snappy gz
-do
-	$HBASE_HOME/bin/hbase org.apache.hadoop.hbase.util.CompressionTest somefile $ty
-done
+killall -9 java
+
+sudo umount /tmp/hbase-tmp
+rm -rf /tmp/hbase-*
+rm -rf /tmp/Jetty_*
 
 exit 0
