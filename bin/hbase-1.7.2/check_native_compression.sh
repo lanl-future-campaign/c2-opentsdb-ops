@@ -1,10 +1,8 @@
 #!/bin/bash -xu
 
-curdir=$(cd `dirname $0` && pwd)
+dir0=$(cd `dirname $0` && pwd)
 
-cd `realpath $curdir` || exit 1
-
-source common.sh
+source $dir0/common.sh
 
 for ty in snappy gz
 do
