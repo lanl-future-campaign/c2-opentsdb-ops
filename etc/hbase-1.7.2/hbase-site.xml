@@ -53,6 +53,6 @@
   </property>
   <property>
     <name>hbase.regionserver.handler.count</name>
-    <value>16</value>
+    <value>32</value>
   </property>
 </configuration>
